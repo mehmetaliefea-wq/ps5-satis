@@ -153,13 +153,13 @@ button:hover{
     font-size:32px;
     font-weight:bold;
 }
-  .kategoriler{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    margin:20px;
-    flex-wrap:wrap;
-}
+ <div class="kategoriler">
+    <button onclick="filtrele('hepsi')">Tümü</button>
+    <button onclick="filtrele('spor')">Spor</button>
+    <button onclick="filtrele('aksiyon')">Aksiyon</button>
+    <button onclick="filtrele('acikdunya')">Açık Dünya</button>
+</div>
+
 </style>
 </head>
 
@@ -198,7 +198,7 @@ onkeyup="ara()">
 </div>
 <div class="urunler">
 
-<div class="kart">
+<div class="kart spor">
 <h2>EA FC 26</h2>
 <p>
     <span class="eski-fiyat">1800 TL</span><br>
@@ -213,7 +213,7 @@ Satın Al
 
 <h2>EA FC 26</h2>
 </div>
-  <div class="kart">
+  <div class="kart acikdünya">
     <span class="rozet">🔥 %20 İndirim</span>
 <img src="images/gtav.jpg" alt="GTA V">
     <h2>GTA V</h2>
@@ -226,7 +226,7 @@ Satın Al
 Satın Al
 </button>
   </div>
-<div class="kart">
+<div class="kart aksiyon">
 <span class="rozet">🔥 %14 İndirim</span>
   <img src="images/spiderman2.jpg" alt="Spider-Man 2">
 <h2>Spider-Man 2</h2>
@@ -253,6 +253,25 @@ kartlar[i].style.display = "block";
 kartlar[i].style.display = "none";
 }
 }
+}
+  function filtrele(kategori){
+
+    let kartlar = document.getElementsByClassName("kart");
+
+    for(let i = 0; i < kartlar.length; i++){
+
+        if(kategori === "hepsi"){
+            kartlar[i].style.display = "block";
+        }
+
+        else if(kartlar[i].classList.contains(kategori)){
+            kartlar[i].style.display = "block";
+        }
+
+        else{
+            kartlar[i].style.display = "none";
+        }
+    }
 }
 </script>
   <a href="https://wa.me/905324885244" class="whatsapp" target="_blank">
