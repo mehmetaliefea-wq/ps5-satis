@@ -34,13 +34,13 @@ padding:20px;
 border-radius:10px;
 text-align:center;
 transition:0.3s;
+position:relative;
+  border:1px solid #003791;
 }
 
 .kart:hover{
-transform:scale(1.05);
-}
-.kart:hover{
-transform:scale(1.05);
+transform:translateY(-8px);
+box-shadow:0 0 20px #003791;
 }
 button{
 background:#003791;
@@ -49,6 +49,17 @@ border:none;
 padding:10px 20px;
 border-radius:5px;
 cursor:pointer;
+}
+  .rozet{
+position:absolute;
+top:10px;
+left:10px;
+background:#ff3b30;
+color:white;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
 }
 </style>
 </head>
@@ -77,21 +88,21 @@ onkeyup="ara()">
 <div class="kart">
 <h2>EA FC 26</h2>
 <p>1500 TL</p>
-<button onclick="window.open('https://wa.me/905324885244?text=Merhaba EA FC 26 oyununu satın almak istiyorum')">Satın Al</button>
-</div>
+<button onclick="window.open('https://wa.me/905324885244?text=Merhaba,%20EA%20FC%2026%20oyununu%20satın%20almak%20istiyorum')">
+Satın Al
+</button>
+<span class="rozet">🎯 Fırsat Ürünü</span>
+<button onclick="window.open('https://wa.me/905324885244?text=Merhaba,%20GTA%20V%20oyununu%20satın%20almak%20istiyorum')">
+Satın Al
+</button>
 
 <div class="kart">
-<h2>GTA V</h2>
-<p>800 TL</p>
-<button onclick="window.open('https://wa.me/905324885244?text=Merhaba GTA V oyununu satın almak istiyorum')">Satın Al</button>
-</div>
-
-<div class="kart">
+<span class="rozet">⭐ Popüler</span>
 <h2>Spider-Man 2</h2>
 <p>1200 TL</p>
-<button onclick="window.open('https://wa.me/905324885244?text=Merhaba Spider-Man 2 oyununu satın almak istiyorum')">Satın Al</button>
-</div>
-
+<button onclick="window.open('https://wa.me/905324885244?text=Merhaba,%20GTA%20V%20oyununu%20satın%20almak%20istiyorum')">
+Satın Al
+</button>
 </div>
 <script>
 function ara() {
