@@ -4,23 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PS5 Oyun Market</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+}
+
+header{
+background:#003791;
+padding:25px;
+text-align:center;
+}
+
+.urunler{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+}
+
+.kart{
+background:#222;
+width:250px;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+button{
+background:#003791;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
 </head>
+
 <body>
 
-<h1>PS5 Oyun Market</h1>
+<header>
+<h1>🎮 PS5 Oyun Market</h1>
+<p>Yeni ve İkinci El PS5 Oyunları</p>
+</header>
 
-<h2>Satılık Oyunlar</h2>
+<div class="urunler">
 
-<div>
-<h3>EA FC 26</h3>
-<p>Fiyat: 1500 TL</p>
+<div class="kart">
+<h2>EA FC 26</h2>
+<p>1500 TL</p>
 <button>Satın Al</button>
 </div>
 
-<div>
-<h3>GTA V</h3>
-<p>Fiyat: 800 TL</p>
+<div class="kart">
+<h2>GTA V</h2>
+<p>800 TL</p>
 <button>Satın Al</button>
+</div>
+
+<div class="kart">
+<h2>Spider-Man 2</h2>
+<p>1200 TL</p>
+<button>Satın Al</button>
+</div>
+
 </div>
 
 </body>
