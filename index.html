@@ -52,7 +52,14 @@ cursor:pointer;
 <h1>🎮 PS5 Oyun Market</h1>
 <p>Yeni ve İkinci El PS5 Oyunları</p>
 </header>
-
+<div style="text-align:center;padding:20px;">
+<input
+type="text"
+id="arama"
+placeholder="Oyun Ara..."
+style="padding:10px;width:300px;border-radius:8px;border:none;"
+onkeyup="ara()">
+</div>
 <div class="urunler">
 
 <div class="kart">
@@ -74,6 +81,21 @@ cursor:pointer;
 </div>
 
 </div>
+<script>
+function ara() {
+let input = document.getElementById("arama").value.toLowerCase();
+let kartlar = document.getElementsByClassName("kart");
 
+for(let i = 0; i < kartlar.length; i++){
+let oyun = kartlar[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
+
+if(oyun.includes(input)){
+kartlar[i].style.display = "block";
+}else{
+kartlar[i].style.display = "none";
+}
+}
+}
+</script>
 </body>
 </html>
