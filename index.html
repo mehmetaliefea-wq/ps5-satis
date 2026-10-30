@@ -162,7 +162,20 @@ button:hover{
     Aksesuar
 </button>
 </div>
-
+.oyunlar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+  .oyun-kart{
+    width: 300px;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #0056d6;
+}
 </style>
 </head>
 
@@ -243,35 +256,44 @@ Satın Al
 </button>
 </div>
   <!-- PS5 Kolu -->
-<div class="oyun-kart" data-kategori="aksesuar">
+<div class="kart aksesuar">
+    <span class="rozet">🔥 %17 İndirim</span>
+
     <img src="images/ps5-kol.jpg" alt="PS5 DualSense">
-    <h3>PS5 DualSense Kol</h3>
 
-    <div class="fiyat-alani">
-        <span class="eski-fiyat">3.000 TL</span>
-        <span class="yeni-fiyat">2.499 TL</span>
-    </div>
+    <h2>PS5 DualSense Kol</h2>
 
-    <a href="https://wa.me/905324885244?text=PS5%20DualSense%20Kol%20satın%20almak%20istiyorum"
-       class="siparis-btn" target="_blank">
-       WhatsApp Sipariş
-    </a>
+    <p>
+        <span class="eski-fiyat">3000 TL</span><br>
+        <span class="yeni-fiyat">2499 TL</span>
+    </p>
+
+    <button onclick="window.open('https://wa.me/905324885244?text=PS5%20DualSense%20Kol%20satın%20almak%20istiyorum')">
+        Satın Al
+    </button>
+</div>
+    
+    
 </div>
 
 <!-- PS4 Kolu -->
-<div class="oyun-kart" data-kategori="aksesuar">
+<div class="kart aksesuar">
+    <span class="rozet">🔥 %25 İndirim</span>
+
     <img src="images/ps4-kol.jpg" alt="PS4 DualShock 4">
-    <h3>PS4 DualShock 4 Kol</h3>
 
-    <div class="fiyat-alani">
-        <span class="eski-fiyat">2.000 TL</span>
-        <span class="yeni-fiyat">1.499 TL</span>
-    </div>
+    <h2>PS4 DualShock 4 Kol</h2>
 
-    <a href="https://wa.me/905324885244?text=PS4%20DualShock%204%20Kol%20satın%20almak%20istiyorum"
-       class="siparis-btn" target="_blank">
-       WhatsApp Sipariş
-    </a>
+    <p>
+        <span class="eski-fiyat">2000 TL</span><br>
+        <span class="yeni-fiyat">1499 TL</span>
+    </p>
+
+    <button onclick="window.open('https://wa.me/905324885244?text=PS4%20DualShock%204%20Kol%20satın%20almak%20istiyorum')">
+        Satın Al
+    </button>
+</div>
+    
 </div>
 <script>
 function ara() {
