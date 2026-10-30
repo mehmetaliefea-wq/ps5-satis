@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PS5 Oyun Market</title>
+  <body>
 
+<div class="sepet">
+    🛒 <span id="sepet-sayisi">0</span>
+</div>
 <style>
 body{
 margin:0;
@@ -181,6 +185,17 @@ button:hover{
     font-weight:bold;
     margin:10px 0;
 }
+  .sepet{
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: #005eff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 1000;
+}
 </style>
 </head>
 
@@ -229,6 +244,9 @@ onkeyup="ara()">
 <button onclick="window.open('https://wa.me/905324885244?text=Merhaba,%20EA%20FC%2026%20oyununu%20satın%20almak%20istiyorum')">
 Satın Al
 </button>
+  <button onclick="sepeteEkle()">
+    🛒 Sepete Ekle
+</button>
 <span class="rozet">🔥 %17 İndirim</span>
 
 <img src="images/fc26.jpg" alt="EA FC 26">
@@ -248,6 +266,9 @@ Satın Al
 <button onclick="window.open('https://wa.me/905324885244?text=Merhaba,%20GTA%20V%20oyununu%20satın%20almak%20istiyorum')">
 Satın Al
 </button>
+    <button onclick="sepeteEkle()">
+    🛒 Sepete Ekle
+</button>
   </div>
 <div class="kart aksiyon">
 <span class="rozet">🔥 %14 İndirim</span>
@@ -261,6 +282,9 @@ Satın Al
 
 <button onclick="window.open('https://wa.me/905324885244?text=Merhaba,%20GTA%20V%20oyununu%20satın%20almak%20istiyorum')">
 Satın Al
+</button>
+  <button onclick="sepeteEkle()">
+    🛒 Sepete Ekle
 </button>
 </div>
   <!-- PS5 Kolu -->
